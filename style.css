@@ -16,17 +16,19 @@ body,html {
     height: 2000px;
     background-color:black;
     color: var(--var-main);
+    font-family: "Tenor Sans", sans-serif;
 }
 
 .container-header {
     background-color: var(--var-navbar);
     width: 90%;
     margin-top: 20px;
-    height: 80px;
+    height: 60px;
     border-radius: 40px;
     backdrop-filter: blur(50px);
     position: fixed;
     justify-self: center;
+    color: black;
     
 }
 
@@ -40,8 +42,8 @@ body,html {
 }
 
 .header-brand {
-    margin-top: 4px;
     margin-left: 20px;
+    margin-top: -4px;
 }
 
 nav ul {
@@ -55,7 +57,7 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    line-height: 80px;
+    line-height: 60px;
     text-transform: uppercase;
 }
 
@@ -98,7 +100,7 @@ nav ul li a {
 .content-why .why-main h3 {
     text-align: center;
     color: var(--var-main);
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 /* bagian icoon font awesome */
@@ -140,24 +142,25 @@ nav ul li a {
     font-size: 12px;
 }
 
-/* bagian abot */
+/* bagian about */
 
 #about {
     width: 100%;
     text-align: center;
-    margin-top: 200px;
-    background-color: whitesmoke;
+    margin-top: 50px;
+    background-color: #CEF09D;
     color: black;
+    padding-bottom: 50px;
 }
 
 #about .tentang h1{
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 #about .tentang p {
     text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     text-indent: 30px;
     font-size: 18px;
 
@@ -165,31 +168,103 @@ nav ul li a {
 
 .img {
     height: 50%;
-    width: 50%;
+    width: 300px;
     padding-bottom: 50px;
 
 }
 
+/* bagian product */
+
+#product {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#product .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.card-container {
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-container .card {
+    padding: 20px;
+}
+
+.card:hover {
+    background-color: var(--var-footer);
+}
+#product h1 {
+    text-align: center;
+}
+
+.gambar-arang {
+    height: 200px;
+    width: 200px;
+}
+
+/* bagian kontak */
+
+#contact {
+    padding: 20px;
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1C646D;
+    padding-bottom: 50px;
+}
+
+#contact .contact-main {
+    margin-top: 50px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #1C646D;
+}
+
+.contact-main .judul-contact {
+    margin-top: 10px;
+}
+
+
+/* FOOTER */
+.footer-container {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.footer {
+    text-align: center;
+}
+
 /* jika dalam smartphone dan tablet */
 @media  screen and (max-width:768px) {
+        
     .container-header .header-flex label {
-    display: inline-block;
-    font-size: 30px;
-    padding: 10px;
-    padding-top: 10px;
-    margin-top: 5px;
+        display: inline-block;
+        font-size: 30px;
+        padding: 10px;
+        padding-top: 5px;
+        margin-top: 2px;
 }
       /* susunan ulang menu */
-    .container-header .header-flex {
-       
-
-    }
 
     nav ul {
         flex-direction: column;
         width: 200px;
         position: absolute;
-        top: 40px;
+        top: 20px;
         left: 40px;
         background-color: var(--var-second);
         backdrop-filter: blur(100px);
@@ -215,7 +290,7 @@ nav ul li a {
 
     .container-header .header-brand h2 {
         margin-left: 40px;
-        
+        display: flex;    
     }
     /* menyembuntikan  */
     .container-header nav {
@@ -228,6 +303,4 @@ nav ul li a {
         margin-top: 40px;
         position: absolute;
 }
-
 }
-
