@@ -164,8 +164,8 @@ nav ul li a {
 }
 
 .img {
-    height: 400px;
-    width: 400px;
+    height: 50%;
+    width: 50%;
     padding-bottom: 50px;
 
 }
@@ -230,3 +230,4 @@ nav ul li a {
 }
 
 }
+
